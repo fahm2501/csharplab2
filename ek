@@ -1,0 +1,12 @@
+Countries_visited = []
+country= input ("List the most recent countries you visited: ")
+
+while country!="":  
+  Countries_visited.append(country)
+  country = input ("List the most recent county you visited")
+
+if len(Countries_visited) < 2:
+  print ("No country visited beyond current country")
+else:
+  for countries in Countries_visited:
+    print(countries)
